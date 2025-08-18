@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  background-color: #ffe6f0;
+  color: #330033;
+  padding: 1rem;
+}
+
+nav {
+  background-color: #ff66b2;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  margin-bottom: 1rem;
+  border: 0.2rem solid #ff3399;
+}
+
+nav ul {
+  display: flex;
+  justify-content: end;
+  list-style: none;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  align-items: end;
+  color: #fff;
+  border: 0.3rem solid #ff99cc;
+  border-radius: 0.2rem;
+  font-weight: bold;
+  padding: 1rem 1rem;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #fff;
+  border-color: #ff66b2;
+  color: #ff3399;
+}
+
+label {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+form {
+  background-color: #ffb3d9;
+  padding: 1rem;
+  border: 0.1rem dashed #ff66b2;
+  border-radius: 0.3rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  display: flex;
+  width: 50%;
+  padding: 1rem;
+  font-family: "Courier New", Courier, monospace;
+  margin-bottom: 1rem;
+  border: 0.3rem solid #ff66b2;
+  border-radius: 0.3rem;
+  background-color: #fff0f5;
+  text-align: center;
+  margin: 0 auto;
+}
+
+input[type="radio"] {
+  margin-right: 1rem;
+}
+
+button {
+  font-weight: bold;
+  background-color: #ff66b2;
+  color: #fff;
+  padding: 1rem 1rem;
+  margin-top: 1rem;
+  border: 0.2rem solid #ff3399;
+  border-radius: 0.3rem;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #fff;
+  border-color: #ff66b2;
+  color: #ff3399;
+}
+
+ul {
+  margin-top: 1rem;
+  padding-left: 1rem;
+}
+
+ul li {
+  margin-bottom: 1rem;
+}
+
+p {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+a {
+  background-color: #ff66b2;
+  margin-top: 1rem;
+  text-decoration: none;
+  padding: 1rem 1rem;
+  border-radius: 0.3rem;
+  color: #fff;
+  border: 0.1rem solid #ff3399;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #ff3399;
+  background-color: #fff;
+  border-color: #ff66b2;
+}
