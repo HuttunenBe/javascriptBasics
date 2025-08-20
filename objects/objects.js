@@ -1,19 +1,36 @@
-//Use .map() to square each number in [1, 2, 3, 4].
+// 1. Create an object – Create an object `person` with properties: `name`, `age`, and `city`
 
-//Use .filter() to keep only even numbers.
+const person = {
+  name: "John",
+  age: 50,
+  city: "New York",
+};
 
-//Use .reduce() to sum up an array.
+// 2. Access a property – Log the `name` and àge` of the `person` object to the console
 
-//Use .forEach() to log each item.
+console.log(person.name, person.age);
 
-//Use .find() to find the first number greater than 3.
+// 3. Add a property – Add a new property `job` to the `person` object
 
-//Use .some() to check if any number is negative.
+person.job = "Web Developer";
+console.log(person.job);
 
-//Use .every() to check if all numbers are > 0.
+// 4. Update a property – Change the `age` property of `person` to a new value
 
-//Use .sort() to sort [3, 1, 4, 2] ascending.
+person.age = 20;
+console.log(person.age);
 
-//Use .slice() to get the first 3 items.
+// 5. Delete a property – Remove the `city` property from the `person` object
 
-//Use .splice() to remove 2 items from the middle.*/
+delete person.city;
+console.log(person.city);
+
+// 6. Object.keys() – Use `Object.keys()` to get an array of all property names in `person`
+
+const array = Object.keys(person);
+console.log(array);
+
+// 7. Object.values() – Use `Object.values()` to get an array of all property values in `person`
+// 8. Check for a property – Use the `in` operator or `hasOwnProperty()` to check if `person` has a `job` property
+// 9. Loop through properties – Use a `for...in` loop to log all key-value pairs of `person`
+// 10. Nested object – Add a nested object `address` to `person` with properties `street` and `zip`, then log `person.address.street`
