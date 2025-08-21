@@ -44,7 +44,41 @@ console.log(largerNumber(10, 11));
 
 // 7. Use === to compare two variables
 
+const compareVariable = (value1, value2) => {
+  if (value1 === value2) {
+    return "Same!";
+  } else {
+    return "Oh no!";
+  }
+};
+
+console.log(compareVariable(1, 6));
+
 // 8. Use logical AND (&&)
+
+const ageCheck = (age, hasId) => {
+  if (age >= 18 && hasId) {
+    console.log("You can enter");
+  } else {
+    console.log("You cannot enter");
+  }
+};
+
+ageCheck(20, true);
+ageCheck(16, true);
+
+const age = 20;
+const hasId = true;
+
+if (age >= 18 && hasId) {
+  console.log("You can enter");
+} else {
+  console.log("You cannot enter");
+}
+
+const isLoggedIn = true;
+const welcomeMessage = isLoggedIn && "Welcome back!";
+console.log(welcomeMessage);
 
 // 9. Use logical OR (||)
 
@@ -71,3 +105,23 @@ whatDay("day1");
 whatDay();
 
 // 11. Use a ternary operator
+
+const toggle = true;
+const ternary = toggle ? "true" : "false";
+
+console.log(ternary);
+
+const modal = false;
+const checkModal = modal ? "open" : "closed";
+
+console.log(checkModal);
+
+const ternaryTest = true;
+const checkTernary = ternaryTest ? "true" : "false";
+
+//const age = 20;
+//const hasId = true;
+
+age >= 18 && hasId
+  ? console.log("You can enter")
+  : console.log("You cannot enter");

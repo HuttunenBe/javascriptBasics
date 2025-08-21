@@ -63,13 +63,21 @@ console.log(fruits.reverse()); // Reverse the order of array
 
 //Use .map() to square each number in [1, 2, 3, 4].
 
-const array = [1, 2, 3, 4]
+const arrayMap = [1, 2, 3, 4]
 
 const squares = array.map()
 
 //Use .filter() to keep only even numbers.
 
+const evenNumbers = [1, 2, 3, 4, 5, 6]
+const newEvenNumbersArray =  evenNumbers.filter(number => number % 2 === 0)
+
+console.log(newEvenNumbersArray)
+
 //Use .reduce() to sum up an array.
+
+const reduceArray = [1, 2, 3, 4, 5]
+const newReduceArray = reduceArray.reduce()
 
 //Use .forEach() to log each item.
 
