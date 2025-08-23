@@ -44,13 +44,53 @@ value += 10;
 console.log(value);
 
 // 10. Use -= to subtract a value from a variable
+
+let x = 10;
+x -= 3; 
+console.log(x); 
+
 // 11. Use *= to multiply a variable by a value
+let y = 5;
+y *= 4; 
+
+console.log(y); 
+
 // 12. Use /= to divide a variable by a value
+let z = 20;
+z /= 5; 
+
+console.log(z); 
+
 // 13. Compare if one number is greater than another
+
+let a = 7;
+let b = 3;
+console.log(a > b);
+
 // 14. Compare if one number is less than another
+
+let c = 2;
+let d = 5; 
+
+console.log(c < d)
+
 // 15. Compare if two numbers are equal (===)
+
+let e = 4;
+let f = 4;
+console.log(e === f);
+
 // 16. Compare if two numbers are not equal (!==)
+let g = 11;
+let h = 7;
+
 // 17. Use logical AND (&&) with two boolean values
+
+let isTrue = true;
+let isFalse = false; 
+
+console.log(true && false)
+
 // 18. Use logical OR (||) with two boolean values
 // 19. Use logical NOT (!) to flip a boolean value
 // 20. Experiment with operator precedence in a math expression
