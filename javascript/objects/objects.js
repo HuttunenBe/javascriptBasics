@@ -31,6 +31,9 @@ const array = Object.keys(person);
 console.log(array);
 
 // 7. Object.values() – Use `Object.values()` to get an array of all property values in `person`
+
+
+
 // 8. Check for a property – Use the `in` operator or `hasOwnProperty()` to check if `person` has a `job` property
 // 9. Loop through properties – Use a `for...in` loop to log all key-value pairs of `person`
 // 10. Nested object – Add a nested object `address` to `person` with properties `street` and `zip`, then log `person.address.street`

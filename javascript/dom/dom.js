@@ -23,6 +23,14 @@ paragraph.innerHTML = "Hello";
 
 /*Change background color on button click.*/
 
+const backgroundColor = document.getElementById("background")
+
+const changeColor = () => {
+  backgroundColor.style.backgroundColor = "red" // Variable, style, css property
+}
+
+backgroundColor.addEventListener("click", changeColor)
+
 /*Add a new element to the page.
 
 Remove an element from the page.
@@ -105,7 +113,31 @@ textAndColor.addEventListener("click", () => {
 
 // 3. Change the background color of a div when the mouse hovers over it.
 
+const hoverOverDiv = document.getElementById("hover")
+
+const colorChangeDiv = () => {
+hoverOverDiv.style.backgroundColor = "blue"
+}
+
+hoverOverDiv.addEventListener("mouseenter", colorChangeDiv)
+
+
+hoverOverDiv.addEventListener("mouseenter", () => {
+  hoverOverDiv.style.backgroundColor = "blue";
+});
+
+
 // 4. Display the value of an input field in a paragraph as the user types.
+
+const input = document.getElementById("input") // Access value typed
+const output = document.getElementById("output") // Display output value
+
+input.addEventListener("input", () => {
+  output.textContent = input.value 
+}) // Set paragraph text to match input field
+
+
+
 
 // 5. Toggle the visibility of a paragraph when a button is clicked.
 
@@ -133,3 +165,25 @@ const hideParagraph = () => {
 hideButton.addEventListener("click", hideParagraph);
 
 // 6. Add both click and mouseover events to a button, each doing something different.
+
+const buttonDifferent = document.getElementById("button")
+const containerBackground = document.getElementsById("aboutPage")
+const textColor = document.getElementById("aboutParagraph")
+
+const buttonClick = () => {
+  containerBackground.style.backgroundColor = "blue"
+  
+}
+
+const mouseOver = () => {
+textColor.style.color = "white"
+}
+
+buttonDifferent.addEventListener("click", buttonClick)
+buttonDifferent.addEventListener("mouseover", mouseOver)
+
+
+buttonDifferent.addEventListener("click", () => {
+    containerBackground.style.backgroundColor = "blue"
+  textColor.style.color = "white"
+})
