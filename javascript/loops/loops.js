@@ -1,5 +1,6 @@
 // 1. Loop from 1 to 10 using for
 
+
 for (let i = 1; i <= 10; i++) {
   console.log(i);
 }
@@ -83,4 +84,4 @@ console.log(reversedArray);
 
 /* forEach() */
 
-names.forEach((name) => console.log(name)); // Sample
+names.forEach((name) => console.log(name)) // Sample
