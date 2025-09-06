@@ -32,4 +32,4 @@ const person: Person = {
   name: "Jack",
   age: 30,
   isStudent: false,
-}
+};
