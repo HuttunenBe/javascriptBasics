@@ -8,10 +8,10 @@ console.log(firstName, birthYear, isTrue);
 
 // Array
 
-const a: number[] = [1, 2, 3, 4];
+const aa: number[] = [1, 2, 3, 4];
 let value: number = 0;
 
-for (const num of a) {
+for (const num of aa) {
   value += num;
 }
 
@@ -45,8 +45,8 @@ console.log(sum2(2, 3)); // 5
 
 // Array copy
 
-const arr: number[] = [1, 2, 3];
-const arrCopy: number[] = [...arr];
+const arrCopied: number[] = [1, 2, 3];
+const arrCopy: number[] = [...arrCopied];
 
 // Array merge/combine
 
