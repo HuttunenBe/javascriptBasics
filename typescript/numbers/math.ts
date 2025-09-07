@@ -20,7 +20,7 @@ const number12: number = 5;
 let remainder = 10 % 3; // 1
 
 if (x % 2 === 0) console.log("even");
-if (x % 2 !== 0) console.log("odd");
+if (x % 2 !== 1) console.log("odd");
 
 function remainderFunction(divide1: number, divide2: number): number {
   return divide1 % divide2;

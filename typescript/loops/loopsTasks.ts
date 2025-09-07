@@ -115,7 +115,7 @@ for (let key in oabj) {
   summedValue += value[key]; // access value trough key
 }
 
-let people = [
+let peoplse = [
   { name: "Alice", age: 25 },
   { name: "Bob", age: 30 },
 ];
@@ -132,23 +132,92 @@ console.log(filteredAge);
 
 // Reduce: sum of all ages
 
+const people2 = [
+  { name: "Alice", age: 18 },
+  { name: "Bob", age: 22 },
+  { name: "Charlie", age: 30 },
+  { name: "David", age: 25 },
+  { name: "Eve", age: 40 }
+];
+
+// Sum all ages using reduce
+const totalAge = people2.reduce((acc, person) => acc + person.age, 0);
+
+
 // Solve with map, filter n reduce
+
+const array34 = [1, 2, 3, 4];
 
 // Iterate through an array and print each element
 
+const mappedArr = array34.map(num => num);
+console.log(mappedArr);
+
 // Sum all elements in an array
+
+const sumAllElements = array34.reduce((acc, num) => acc + num, 0);
+console.log(sumAllElements);
 
 // Multiply all elements in an array
 
+const allMultiplies = array34.map(num => num *= 2)
+console.log(allMultiplies);
+
 // Find the minimum element in an array
+
+console.log(Math.min(...array34));
+
+const minNumber = array34.reduce((min, current) => (current < min ? current : min), array34[0]);
+
 
 // Find the maximum element in an array
 
+console.log(Math.max(...array34));
+const maxNumber = array34.reduce((max, current) => Math.max(max, current), array34[0]);
+
+console.log(maxNumber); 
+
+// With loop 
+
+let maxNumber1 = array34[0];
+
+for (const num of array34){
+    if (num > maxNumber1) maxNumber1 = num
+}; console.log(maxNumber1)
+
 // Find the second largest element in an array
+
+let secondMaxNumber = array34[0];
+
+for (const num of array34){
+    if (num > maxNumber1) maxNumber1 = num
+}; console.log(maxNumber1)
+
+const sortedDesc = [...array34].sort((a, b) => b - a)
+const secondLargest = sortedDesc[1];
+
+const maxx = Math.max(...array34);
+const secondLargest2 = Math.max(...array34.filter(num =>num !== max))
 
 // Count even numbers in an array
 
+for (const num of array34){
+    if (num % 2 === 0) {
+console.log(num)
+    }}
+
+const evenNumbers3 = array34.filter(num => num % 2 === 0);
+console.log(evenNumbers3);
+
+
 // Count odd numbers in an array
+
+const oddNumbers = array34.filter(num => num % 2 === 1);
+
+for(const num of array34){
+if (num % 2 === 1)
+    console.log(num)
+};
 
 // Count elements greater than a target value
 
@@ -188,6 +257,10 @@ console.log(filteredAge);
 
 // Use filter to select elements from an array
 
+
+
 // Use reduce to accumulate values in an array
 
 // Iterate through an array with forEach
+
+

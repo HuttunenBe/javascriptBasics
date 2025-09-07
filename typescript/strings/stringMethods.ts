@@ -56,8 +56,8 @@ console.log(fruitsString); // ["apple", "banana", "orange"]
 
 
 // join(separator) → combine array elements into a string
-const arr = ["apple", "banana", "orange"];
-const string5 = arr.join(" - ");
+const arsr = ["apple", "banana", "orange"];
+const string5 = arsr.join(" - ");
 console.log(string5); // "apple - banana - orange"
 
 // replace(pattern, replacement) → replace first occurrence
@@ -216,4 +216,13 @@ console.log(text3.search(/ain/)); // 5 -> first ain at index 5
 console.log(text3.search(/xyz/)); // -1 because not found
 
 
+// Delete all "ain"
+const removedAin = text3.replace(/ain/g, "");
+console.log(removedAin); // The r in Sp
+// g -> search for all matches 
+// gi remove case sensitivity
 
+const textWithNumbers: string = "H3ll0 W0rld 123!";
+// Delete all numbers
+const removedNumbers = textWithNumbers.replace(/\d/g, ""); // all digits in a string
+console.log(removedNumbers); // Hll Wrld !

@@ -34,7 +34,7 @@ console.log(arrayMethods2.join("-"))
 
 // sort asc & sort desc
 
-console.log(arrayMethods2.sort((a,b) => a+b)); // note: this is not correct sort for numbers, will fix below
+console.log(arrayMethods2.sort((a,b) => a-b)); 
 console.log(arrayMethods2.sort((a,b) => a-b));
 
 // map - makes new array 
