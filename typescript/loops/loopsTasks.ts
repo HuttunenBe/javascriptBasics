@@ -108,11 +108,10 @@ console.log(Object.keys(oabj));
 console.log(Object.values(oabj));
 
 // Sum all values of obj
-
 let summedValue = 0;
 
-for (let key in oabj) {
-  summedValue += value[key]; // access value trough key
+for (let key in obj) {
+  summedValue += obj[key]; // access through key
 }
 
 let peoplse = [
@@ -122,12 +121,12 @@ let peoplse = [
 
 // Map: get array of names
 
-let mappedNames = people.map((person) => person.name);
+let mappedNames = peoplse.map((person) => person.name);
 console.log(mappedNames);
 
 // Filter: people older than 25
 
-let filteredAge = people.filter((person) => person.age > 25);
+let filteredAge = peoplse.filter((person) => person.age > 25);
 console.log(filteredAge);
 
 // Reduce: sum of all ages
