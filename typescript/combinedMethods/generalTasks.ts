@@ -11,10 +11,40 @@ console.log(makePalindrome); // true
 
 
 // Print all elements of an array
+const arrw = [2, 4, 6, 8, 10];
+
+console.log("Array elements:");
+for (let i = 0; i < arrw.length; i++) {
+    console.log(arrw[i]);
+}
+
+for (const element of arrw) {
+    console.log(element);
+}
 
 // Sum all elements in an array
 
+let sum = 0;
+for (let i = 0; i < arrw.length; i++) {
+    sum += arrw[i];
+}
+
+let sumn = 0;
+for (const element of arrw) {
+    sumn += element;
+}
+
 // Multiply all elements in an array
+
+let product = 1;
+for (let i = 0; i < arrw.length; i++) {
+    product *= arrw[i];
+}
+
+let product2 = 1;
+for (const element of arrw) {
+    product2 *= element;
+}
 
 // Find the minimum element
 
