@@ -19,15 +19,15 @@ console.log(sqrt); // 4
 const number12: number = 5;
 let remainder = 10 % 3; // 1
 
-if (x % 2 === 0) console.log("even");
-if (x % 2 !== 1) console.log("odd");
+if (number12 % 2 === 0) console.log("even");
+if (number12 % 2 !== 1) console.log("odd");
 
 function remainderFunction(divide1: number, divide2: number): number {
   return divide1 % divide2;
 }
 
 // Check multiples
-if (x % 3 === 0) console.log("multiple of 3");
+if (number12 % 3 === 0) console.log("multiple of 3");
 
 // Division ny three and floor
 
