@@ -22,3 +22,25 @@ N is an integer within the range [0..100,000];
 the elements of A are all distinct;
 each element of array A is an integer within the range [1..(N + 1)].
 Copyright 2009–2025 by Codility Limited. All Rights Reserv */
+
+
+function findMissingElement(A) {
+  const N = A.length; // get lenghts
+  const expectedNumbers = []; // ready for numbers
+
+  // Create an array with all numbers from 1 to N+1
+  for (let i = 1; i <= N + 1; i++) { // add +1
+    expectedNumbers.push(i); // add to expectedNumers array
+  }
+
+  // Check which number is missing
+  for (let i = 0; i < expectedNumbers.length; i++) {
+    if (!A.includes(expectedNumbers[i])) { // checks if A includes the number
+      return expectedNumbers[i]; // return the missing number immediately 
+    }
+  }
+  
+  return -1; // just in case, though there should always be a missing number
+}
+
+

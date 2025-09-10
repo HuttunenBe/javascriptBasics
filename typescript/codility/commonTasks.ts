@@ -1,43 +1,50 @@
-/*Arrays
+// Arrays
+// Find max/min number → Math.max(...arr) or loop
 
-Find max/min number → Math.max(...arr) or loop
+const numberMaxMin = [1, 2, 3, 4];
+const numMax = Math.max(...numberMaxMin);
+const numMin = Math.min(...numberMaxMin);
 
-Sort ascending/descending → arr.sort((a,b)=>a-b)
+let maxResult = numberMaxMin[0]; 
+let minResult = numberMaxMin[0];
 
-Find index → arr.indexOf(value) or arr.findIndex(cond)
+for (const num of numberMaxMin) {
+    if (num > maxResult) {
+        maxResult = num;
+    }
+    if (num < minResult) {
+        minResult = num;
+    }
+}
 
-Filter → arr.filter(cond)
+// Sort ascending/descending 
 
-Check existence → arr.includes(value)
+numberMaxMin.sort((a, b) => a - b);
 
-Strings
 
-Check if substring exists → str.includes("text")
 
-Find position → str.indexOf("text")
+// Find index → arr.indexOf(value) or arr.findIndex(cond)
 
-Replace part of string → str.replace("old","new")
+numberMaxMin.indexOf(1);
 
-Slice part of string → str.slice(start,end)
+// Filter → arr.filter(cond)
+// Check existence → arr.includes(value)
 
-Objects
+// Strings
+// Check if substring exists → str.includes("text")
+// Find position → str.indexOf("text")
+// Replace part of string → str.replace("old","new")
+// Slice part of string → str.slice(start,end)
 
-Sort by property → arr.sort((a,b)=>a.prop-b.prop)
+// Objects
+// Sort by property → arr.sort((a,b)=>a.prop-b.prop)
+// Find object → arr.find(o=>o.prop===value)
+// Find index → arr.findIndex(o=>o.prop===value)
+// Filter objects → arr.filter(o=>condition)
 
-Find object → arr.find(o=>o.prop===value)
-
-Find index → arr.findIndex(o=>o.prop===value)
-
-Filter objects → arr.filter(o=>condition)
-
-Easiest way to answer in tests
-
-Read question carefully: Does it need sorting first?
-
-Pick right method: sort(), find(), filter(), indexOf()
-
-Use custom comparator only if sorting numbers or objects.
-
-Use binary search if array is sorted and question asks for index of element.
-
-Remember edge cases: element not found → return -1 (arrays) or undefined (objects).*/
+// Easiest way to answer in tests
+// Read question carefully: Does it need sorting first?
+// Pick right method: sort(), find(), filter(), indexOf()
+// Use custom comparator only if sorting numbers or objects.
+// Use binary search if array is sorted and question asks for index of element.
+// Remember edge cases: element not found → return -1 (arrays) or undefined (objects).

@@ -218,6 +218,94 @@ if (num % 2 === 1)
     console.log(num)
 };
 
+// Print all elements in an array
+
+
+const printArray = [1, 2, 3, 4,]
+const textArray = ["Hello", "World", "This"
+]
+
+let mapArray = printArray.forEach((num => console.log(num)));
+
+const reducedArr = printArray.reduce((acc, num) => acc + num, 0);
+
+
+for (const num of printArray){
+  console.log(num)
+}
+
+// Sum all elements in an array
+
+let sum = 0;
+
+for (let i = 0; i < printArray.length; i++){
+  sum += printArray[i]
+}
+
+for (const num of printArray){
+  sum += num;
+}
+
+// Multiply elements in an array
+
+// intialize with 0 
+
+for (let i = 0; i < printArray.length; i++){
+  sum *=printArray[i];
+
+}
+
+for (const num of printArray){
+  sum *= num;
+}
+
+// Print each element of an array
+
+for(const num of printArray) console.log(num);
+
+// Find the maximum element in an array
+
+let maxxxx = Math.max(...printArray);
+
+let maaxx = 0;
+
+for (const num of printArray){
+  if (num > maaxx)
+    maaxx = num;
+    console.log(maaxx);
+}
+
+
+
+// Find the minimum element in an array
+
+let minim = Math.min(...evenNumbers3)
+
+// Find the second largest element in an array
+const arg = [1, 2 ,3 ,4]
+
+second 
+
+for (const num of arg){
+    if (num > maxNumber1) maxNumber1 = num
+}; console.log(maxNumber1)
+
+// Count even elements in an array
+// Count odd elements in an array
+// Map: double each element of an array
+// Filter: get only even elements from an array
+// Reduce: sum all elements of an array
+// Print all keys of an object
+// Print all values of an object
+// Sum all values of an object
+// Map: get array of names from objects
+// Filter: people older than a certain age
+// Reduce: sum of ages of people
+// Print each character of a string
+// Convert a string to uppercase using a loop
+// Count vowels in a string
+
+
 // Count elements greater than a target value
 
 // Print each character of a string

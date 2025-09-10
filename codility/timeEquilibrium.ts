@@ -38,3 +38,37 @@ Write an efficient algorithm for the following assumptions:
 
 N is an integer within the range [2..100,000];
 each element of array A is an integer within the range [−1,000..1,000].*/
+
+
+function minimalDifference(A) {
+  let minDiff = Infinity;
+
+  for (let P = 1; P < A.length; P++) {
+    let leftSum = 0;
+    let rightSum = 0;
+
+    // Sum left part
+    for (let i = 0; i < P; i++) {
+      leftSum += A[i];
+    }
+
+    // Sum right part
+    for (let i = P; i < A.length; i++) {
+      rightSum += A[i];
+    }
+
+    // Calculate difference
+    const diff = Math.abs(leftSum - rightSum);
+
+    // Update minimum difference
+    if (diff < minDiff) {
+      minDiff = diff;
+    }
+  }
+
+  return minDiff;
+}
+
+// Example
+const A = [3, 1, 2, 4, 3];
+console.log(minimalDifference(A)); // Output: 1 exolain this code line by libe

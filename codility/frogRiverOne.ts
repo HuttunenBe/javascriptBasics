@@ -41,3 +41,19 @@ Write an efficient algorithm for the following assumptions:
 N and X are integers within the range [1..100,000];
 each element of array A is an integer within the range [1..X].
 */
+
+
+function earliestCrossingTime(X: number, A: number[]): number {
+  const leaves = new Set(); //Set to store unique positions/leaves have fallen 
+
+  for (let time = 0; time < A.length; time++) { // loop trough every second in array A
+    leaves.add(A[time]); // Gives the position where where leaf falls at thay second + Add to set 
+
+    if (leaves.size === X) { // chekc all positions have a leaf
+      return time; // earliest time frog can jump
+    }
+  }
+
+  return -1; // frog can never cross
+}
+

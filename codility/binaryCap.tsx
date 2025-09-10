@@ -16,3 +16,10 @@ if (N <= 0) return 0;
 }
 
 console.log(binaryGap(529)); // Output: 4
+
+
+
+
+// Find binary cap 
+
+
