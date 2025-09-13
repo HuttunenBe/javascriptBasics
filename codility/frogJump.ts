@@ -4,3 +4,4 @@ function frogJumps(X: number, Y: number, D: number): number {
     const distanceNeeded = Y - X;         // how far the frog needs to go
     return Math.ceil(distanceNeeded / D); // divide to get the return ceil 
 }
+

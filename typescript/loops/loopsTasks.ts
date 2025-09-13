@@ -108,6 +108,7 @@ console.log(Object.keys(oabj));
 console.log(Object.values(oabj));
 
 // Sum all values of obj
+let obj = {name: "John", age: 22}
 let summedValue = 0;
 
 for (let key in obj) {
@@ -284,17 +285,38 @@ let minim = Math.min(...evenNumbers3)
 // Find the second largest element in an array
 const arg = [1, 2 ,3 ,4]
 
-second 
 
 for (const num of arg){
     if (num > maxNumber1) maxNumber1 = num
 }; console.log(maxNumber1)
 
 // Count even elements in an array
+
+const arr22 = [1, 2, 3, 4, 5, 6];
+const evenCount = arr22.filter(num => num % 2 === 0).length;
+console.log(evenCount);
+
 // Count odd elements in an array
+
+const oddCount = arr22.filter(num => num % 2 !== 0).length;
+console.log(oddCount);
+
 // Map: double each element of an array
+
+const doubled4 = arr22.map(num => num * 2);
+
+console.log(doubled4);
+
+
 // Filter: get only even elements from an array
+
+const evens = arr22.filter(num => num % 2 === 0);
+console.log(evens);
+
 // Reduce: sum all elements of an array
+
+const sum33 = arr22.reduce((acc, num) => acc + num, 0);
+console.log(sum);
 // Print all keys of an object
 // Print all values of an object
 // Sum all values of an object
