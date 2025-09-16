@@ -5,5 +5,6 @@ This repository is a personal project that focuses on revisiting JavaScript basi
 
 ### 🛠️ Tech Stack
 * JavaScript
+* React
 * HTML
 * CSS
