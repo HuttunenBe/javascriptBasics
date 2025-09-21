@@ -197,7 +197,7 @@ const sortedDesc = [...array34].sort((a, b) => b - a)
 const secondLargest = sortedDesc[1];
 
 const maxx = Math.max(...array34);
-const secondLargest2 = Math.max(...array34.filter(num =>num !== max))
+const secondLargest2 = Math.max(...array34.filter(num =>num !== maxx))
 
 // Count even numbers in an array
 
@@ -237,14 +237,14 @@ for (const num of printArray){
 
 // Sum all elements in an array
 
-let sum = 0;
+let sum5 = 0;
 
 for (let i = 0; i < printArray.length; i++){
-  sum += printArray[i]
+  sum5 += printArray[i]
 }
 
 for (const num of printArray){
-  sum += num;
+  sum5 += num;
 }
 
 // Multiply elements in an array
@@ -252,12 +252,12 @@ for (const num of printArray){
 // intialize with 0 
 
 for (let i = 0; i < printArray.length; i++){
-  sum *=printArray[i];
+  sum5 *=printArray[i];
 
 }
 
 for (const num of printArray){
-  sum *= num;
+  sum5 *= num;
 }
 
 // Print each element of an array
@@ -292,36 +292,92 @@ for (const num of arg){
 
 // Count even elements in an array
 
-const arr22 = [1, 2, 3, 4, 5, 6];
+const arr222 = [1, 2, 3, 4, 5, 6];
 const evenCount = arr22.filter(num => num % 2 === 0).length;
 console.log(evenCount);
 
 // Count odd elements in an array
 
-const oddCount = arr22.filter(num => num % 2 !== 0).length;
+const oddCount = arr222.filter(num => num % 2 !== 0).length;
 console.log(oddCount);
 
 // Map: double each element of an array
 
-const doubled4 = arr22.map(num => num * 2);
+const doubled4 = arr222.map(num => num * 2);
 
 console.log(doubled4);
 
 
 // Filter: get only even elements from an array
 
-const evens = arr22.filter(num => num % 2 === 0);
+const evens = arr222.filter(num => num % 2 === 0);
 console.log(evens);
 
 // Reduce: sum all elements of an array
 
-const sum33 = arr22.reduce((acc, num) => acc + num, 0);
+const sum33 = arr222.reduce((acc, num) => acc + num, 0);
 console.log(sum);
+
+// define samples 
+
+type User = {
+  name: string;
+  age: number;
+};
+
+const films = {
+  name: "Alice in Wonderland",
+  year: 140,
+  genre: "Fantasy",
+};
+
+const numbersObj = {
+  num1: 10,
+  num2: 20,
+  num3: 30,
+};
+
+const users: User[] = [
+  { name: "Alina", age: 25 },
+  { name: "Jessie", age: 30 },
+  { name: "John", age: 20 },
+];
+
 // Print all keys of an object
-// Print all values of an object
+
+for (const key in films) {
+  console.log(key);
+}
+
+// Print all values of an object with three ways
+
+const values = Object.values(films);
+values.forEach(value => console.log(value));
+
+Object.entries(films).forEach(([key, value]) => {
+  console.log(value);
+});
+
+for (const key in films) {
+  console.log(films[key as keyof typeof films]);
+}
+
+
+
 // Sum all values of an object
+
+
 // Map: get array of names from objects
+
+const usersMap: string[] = users.map((user) => user.name);
+console.log(usersMap);
+
 // Filter: people older than a certain age
+
+const minAge = 25;
+const olderPeople: User[] = users.filter((user) => user.age > minAge);
+console.log(olderPeople);
+
 // Reduce: sum of ages of people
 // Print each character of a string
 // Convert a string to uppercase using a loop

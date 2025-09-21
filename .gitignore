@@ -24,3 +24,5 @@ yarn-error.log*
 
 # Optional: coverage reports
 coverage/
+
+codility/
