@@ -48,6 +48,8 @@ for (const element of arrw) {
 
 // Find the minimum element
 
+
+
 // Find the maximum element
 
 // Find the second largest element
@@ -72,6 +74,8 @@ for (const element of arrw) {
 // Convert string to lowercase using a loop
 
 // Reverse a string
+
+
 
 // Check if a string is a palindrome
 
