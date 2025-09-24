@@ -15,6 +15,25 @@ const tagName = document.getElementsByTagName("div");
 
 /* Change text content of a paragraph.*/
 
+
+const par = document.getElementById('p')
+
+const functionCalled = () => {
+  par.innerHTML = "New text"
+}
+
+par.addEventListener('click', functionCalled)
+
+
+
+
+
+
+
+
+
+
+
 //<p id= "paragraph ">This is a paragraph</p>
 
 const paragraph = document.querySelector("#paragraph");
@@ -41,9 +60,20 @@ Toggle a class with a button click.
 
 Get user input value from a form.
 
-Respond to a click event.
+Respond to a click event.*/
 
-Loop through all li elements and style them.*/
+const buttonss = document.getElementById('button')
+const backgroundColorcolor = document.getElementsByClassName("background")[0]
+
+const functionCall = () => {
+  console.log('button was clicked')
+  div.style.color = 'blue'
+}
+
+buttonss.addEventListener('click', functionCall)
+
+
+// Loop through all li elements and style them.
 
 // 1. Add a click event to a button that shows an alert when clicked.
 
@@ -187,3 +217,29 @@ buttonDifferent.addEventListener("click", () => {
     containerBackground.style.backgroundColor = "blue"
   textColor.style.color = "white"
 })
+
+
+// Task 1: When a button is clicked, change the text of a paragraph
+
+const button3 = document.getElementById('button');
+const paragp = document.getElementsByClassName('p')[0];
+
+const functionCalls = () => {
+  paragp.innerHTML = 'Hello'
+}
+
+button3.addEventListener('click', functionCalls)
+
+// Task 2: When a button is clicked, change the background color of a div
+
+const button4 = document.getElementById('button');
+const backgroundColor2 = document.getElementById('background')
+
+button4.addEventListener('click', () => {
+  backgroundColor2.style.backgroundColor = "white"
+})
+
+
+// Task 3: When a button is clicked, toggle a CSS class on an element
+// Task 4: When a button is clicked, create a new list item and add it to a list
+// Task 5: When a button is clicked, remove a specific element from the page

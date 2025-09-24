@@ -4,6 +4,7 @@
 const str12: string = "Codility";
 console.log(str12.length);
 
+
 // 2. Convert "hello world" to uppercase and lowercase
 const str13: string = "hello world";
 console.log(str13.toUpperCase());

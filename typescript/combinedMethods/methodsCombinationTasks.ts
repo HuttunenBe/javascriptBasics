@@ -42,4 +42,12 @@ const sumEven = numbers
 
 // Use split + map + join to capitalize all letters in a string
 
+const str = "hello world";
+
+const capitalized = str
+  .split("")            
+  .map(char => char.toUpperCase()) 
+  .join("");          
+
+console.log(capitalized);
 // Use Object.keys + map to create array of uppercase keys
