@@ -92,5 +92,23 @@ let isFalse = false;
 console.log(true && false)
 
 // 18. Use logical OR (||) with two boolean values
+
+let isHappy = true;
+let isSad = true;
+
+let booleanResult = isHappy || isSad;
+
 // 19. Use logical NOT (!) to flip a boolean value
+
+let isRaining = true;
+
+console.log(!isRaining);
+
+
 // 20. Experiment with operator precedence in a math expression
+
+const result1 = 5 + 3 * 2;    
+const result2 = (5 + 3) * 2;    
+
+console.log(result1); 
+console.log(result2);
