@@ -40,6 +40,16 @@ console.log(largerNumber(10, 11));
 
 // 5. Check if a number is divisible by 5
 
+const dividibleBy5 = (number) => {
+  if (number % 5 == 0) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+const divisibleBy6 = (number) => number % 6 === 0;
+
 // 6. Check password length
 
 // 7. Use === to compare two variables

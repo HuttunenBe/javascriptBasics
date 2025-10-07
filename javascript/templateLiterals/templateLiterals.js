@@ -49,3 +49,6 @@ Generate HTML markup with template literals.
 Use backticks to avoid escaping quotes.
 
 Use template literals in console logs.*/
+
+let surname = "Beniitta";
+console.log(`Hello ${surname}`);

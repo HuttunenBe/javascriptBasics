@@ -1,6 +1,5 @@
 // 1. Loop from 1 to 10 using for
 
-
 for (let i = 1; i <= 10; i++) {
   console.log(i);
 }
@@ -84,4 +83,48 @@ console.log(reversedArray);
 
 /* forEach() */
 
-names.forEach((name) => console.log(name)) // Sample
+names.forEach((name) => console.log(name)); // Sample
+
+// Write a function that takes an array of numbers and returns the sum of the numbers. The numbers can be negative or non-integer. If the array does not contain any numbers then you should return 0.
+
+// For loop
+
+function sum(numbers) {
+  let total = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    total += numbers[i];
+  }
+  return total;
+}
+
+// For of loop
+
+function sum(numbers) {
+  let total = 0;
+  for (const num of numbers) {
+    total += num;
+  }
+  return total;
+}
+
+// For each loop
+
+function sum(numbers) {
+  let total = 0;
+  numbers.forEach((num) => (total += num));
+  return total;
+}
+
+// Reduce
+
+function sum(numbers) {
+  return numbers.reduce((acc, curr) => acc + curr, 0);
+}
+
+function sum(numbers) {
+  return numbers.reduce((a, b) => a + b, 0);
+}
+
+// Oneline
+const sum = (numbers) => numbers.reduce((acc, curr) => acc + curr, 0);
+const sum = (numbers) => numbers.reduce((a, b) => a + b, 0);
