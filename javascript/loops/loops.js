@@ -128,3 +128,65 @@ function sum(numbers) {
 // Oneline
 const sum = (numbers) => numbers.reduce((acc, curr) => acc + curr, 0);
 const sum = (numbers) => numbers.reduce((a, b) => a + b, 0);
+
+// 11. Find the largest number in an array
+
+const numbersFind = [3, 17, 9, 22, 14];
+let maxFind = numbersFind[0];
+
+for (let i = 1; i < numbersFind.length; i++) {
+  if (numbersFind[i] > maxFind) {
+    maxFind = numbersFind[i];
+  }
+}
+
+console.log(maxFind);
+
+// 12. Count how many even numbers are in an array
+
+const numbersArrayEven = [2, 5, 8, 11, 14, 17, 20];
+let count = 0;
+
+for (const num of numbersArrayEven) {
+  if (num % 2 === 0) {
+    count++;
+  }
+}
+
+console.log(count);
+
+// 13. Create a new array with each number doubled
+
+const numbersDooubled = [1, 2, 3, 4, 5];
+const doubled = [];
+
+numbers.forEach((number) => doubled.push(number * 2));
+
+console.log(doubled);
+
+// 14. Check if an array contains a specific value
+
+const books = ["Harry Potter", "The Hobbit", "1984", "Dune"];
+let found = false;
+
+for (let book of books) {
+  if (book === "The Hobbit") {
+    found = true;
+    break;
+  }
+}
+
+console.log(found); // true
+
+// 15. Filter out negative numbers using a loop
+
+const numbersNegative = [5, -3, 8, -2, 7, -1];
+const positives = [];
+
+for (let number of numbersNegative) {
+  if (number >= 0) {
+    positives.push(number);
+  }
+}
+
+console.log(positives);
